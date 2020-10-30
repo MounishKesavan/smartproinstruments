@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gemstone_test_result_array">
+        <item>Metal</item>
+        <item>---</item>
+        <item>Simulant</item>
+        <item>Diamond</item>
+    </string-array>
+</resources>

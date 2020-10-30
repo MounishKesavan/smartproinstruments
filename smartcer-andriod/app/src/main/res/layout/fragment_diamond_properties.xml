@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image">
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_screen_tests"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_screen"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_reader_tests"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_reader"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_gemstone_tests"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_gemeye"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_gague_tests"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_gauge"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_scale_tests"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_scale"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_certification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_active_cer"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/view_scrollview"
+        android:layout_above="@id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.smartpro.smartcer.Control.ResizableImageView
+                    android:id="@+id/smartpro"
+                    android:src="@drawable/smartpro"
+                    android:layout_width="@dimen/smartpro_header_width"
+                    android:layout_height="@dimen/smartpro_header_height"
+                    android:layout_marginTop="@dimen/fab_margin_0"
+                    android:layout_marginBottom="@dimen/fab_margin_0"
+                    android:layout_marginLeft="@dimen/fab_margin_2"
+                    android:layout_marginRight="@dimen/fab_margin_2"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/linearlayout_gradient_background_section">
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/property_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fab_margin"
+                            android:gravity="center">
+
+                            <RelativeLayout
+                                android:layout_width="150dp"
+                                android:layout_height="150dp">
+                                <com.smartpro.smartcer.Control.ResizableImageView
+                                    android:id="@+id/diamond_photo"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/imageview_border"
+                                    android:src="@drawable/diamond_blank_photo" />
+
+                                <LinearLayout
+                                    android:id="@+id/edit_diamond_photo_panel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/linearlayout_background_transparent_white"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="10dp">
+                                    <com.smartpro.smartcer.Control.ResizableImageView
+                                        android:id="@+id/action_photo"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/camera" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="2dp"
+                                        android:paddingLeft="4dp"
+                                        android:text="Edit" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/fab_margin_0"
+                            android:paddingRight="@dimen/fab_margin_0"
+                            android:paddingBottom="@dimen/fab_margin"
+                            android:background="@drawable/linearlayout_background_transparent_black">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                style="@style/listViewItem"
+                                android:background="@android:drawable/list_selector_background">
+                                <TextView
+                                    android:textIsSelectable="false"
+                                    android:id="@+id/sellername_item_header"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    style="@style/listViewPrimaryDetail"
+                                    android:ellipsize="marquee"
+                                    android:maxLength="30"
+                                    android:text="@string/sellername" />
+                                <EditText
+                                    android:id="@+id/sellername"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/sellername_item_header"
+                                    android:lines="3"
+                                    android:minLines="3"
+                                    android:maxLines="3"
+                                    android:paddingLeft="8dp"
+                                    android:paddingRight="8dp"
+                                    android:gravity="top"
+                                    android:singleLine="false"
+                                    android:inputType="text"
+                                    android:scrollbars="vertical"
+                                    android:maxLength="40"
+                                    android:textColor="@color/colorTextColor"
+                                    android:background="@drawable/textview_rounded_corner_stable_out" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                style="@style/listViewItem"
+                                android:background="@android:drawable/list_selector_background">
+                                <TextView
+                                    android:textIsSelectable="false"
+                                    android:id="@+id/testedby_item_header"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    style="@style/listViewPrimaryDetail"
+                                    android:ellipsize="marquee"
+                                    android:text="@string/tested_by_hint" />
+                               <Button
+                                    android:id="@+id/testedby"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="28dp"
+                                    android:textColor="@color/colorTextColor"
+                                    android:gravity="left|center_vertical"
+                                    android:textAllCaps="false"
+                                   android:textStyle="bold"
+                                   android:paddingLeft="16dp"
+                                    android:layout_below="@id/testedby_item_header"
+                                    android:background="@drawable/spinner_rounded_corner_manual"/>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                style="@style/listViewItem"
+                                android:background="@android:drawable/list_selector_background">
+                                <TextView
+                                    android:textIsSelectable="false"
+                                    android:id="@+id/measurements_item_header"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    style="@style/listViewPrimaryDetail"
+                                    android:ellipsize="marquee"
+                                    android:text="@string/measurements_hint" />
+                                <Button
+                                    android:id="@+id/measurements"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="28dp"
+                                    android:textColor="@color/colorTextColor"
+                                    android:gravity="left|center_vertical"
+                                    android:textAllCaps="false"
+                                    android:textStyle="bold"
+                                    android:paddingLeft="16dp"
+                                    android:layout_below="@id/measurements_item_header"
+                                    android:background="@drawable/spinner_rounded_corner_manual"/>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                style="@style/listViewItem"
+                                android:background="@android:drawable/list_selector_background">
+                                <TextView
+                                    android:textIsSelectable="false"
+                                    android:id="@+id/weight_item_header"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    style="@style/listViewPrimaryDetail"
+                                    android:ellipsize="marquee"
+                                    android:singleLine="true"
+                                    android:text="@string/weight_hint" />
+                                <Button
+                                    android:id="@+id/weight"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="28dp"
+                                    android:textColor="@color/colorTextColor"
+                                    android:gravity="left|center_vertical"
+                                    android:textAllCaps="false"
+                                    android:textStyle="bold"
+                                    android:paddingLeft="16dp"
+                                    android:layout_below="@id/weight_item_header"
+                                    android:background="@drawable/spinner_rounded_corner_manual"/>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                style="@style/listViewItem"
+                                android:background="@android:drawable/list_selector_background">
+                                <TextView
+                                    android:textIsSelectable="false"
+                                    android:id="@+id/shape_item_header"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    style="@style/listViewPrimaryDetail"
+                                    android:ellipsize="marquee"
+                                    android:singleLine="true"
+                                    android:text="@string/shape_hint" />
+                                <Spinner
+                                    android:id="@+id/shape"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/shape_item_header"
+                                    android:paddingLeft="16dp"
+                                    android:textColor="@color/colorTextColor"
+                                    android:popupBackground="@drawable/spinner_popup_item"
+                                    android:background="@drawable/spinner_rounded_corner_manual" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                style="@style/listViewItem"
+                                android:background="@android:drawable/list_selector_background">
+                                <TextView
+                                    android:textIsSelectable="false"
+                                    android:id="@+id/color_item_header"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    style="@style/listViewPrimaryDetail"
+                                    android:ellipsize="marquee"
+                                    android:singleLine="true"
+                                    android:text="@string/color_hint" />
+                                <Spinner
+                                    android:id="@+id/color"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/color_item_header"
+                                    android:paddingLeft="16dp"
+                                    android:textColor="@color/colorTextColor"
+                                    android:spinnerMode = "dropdown"
+                                    android:popupBackground="@drawable/spinner_popup_item"
+                                    android:background="@drawable/spinner_rounded_corner_manual" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                style="@style/listViewItem"
+                                android:background="@android:drawable/list_selector_background">
+                                <TextView
+                                    android:textIsSelectable="false"
+                                    android:id="@+id/clarity_item_header"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    style="@style/listViewPrimaryDetail"
+                                    android:ellipsize="marquee"
+                                    android:singleLine="true"
+                                    android:text="@string/clarity_hint" />
+                                <Spinner
+                                    android:id="@+id/clarity"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/clarity_item_header"
+                                    android:paddingLeft="16dp"
+                                    android:textColor="@color/colorTextColor"
+                                    android:spinnerMode = "dropdown"
+                                    android:popupBackground="@drawable/spinner_popup_item"
+                                    android:background="@drawable/spinner_rounded_corner_manual" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                style="@style/listViewItem"
+                                android:background="@android:drawable/list_selector_background">
+                                <TextView
+                                    android:textIsSelectable="false"
+                                    android:id="@+id/mounted_item_header"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    style="@style/listViewPrimaryDetail"
+                                    android:ellipsize="marquee"
+                                    android:singleLine="true"
+                                    android:text="@string/mounted_hint" />
+                                <Spinner
+                                    android:id="@+id/mounted"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/mounted_item_header"
+                                    android:paddingLeft="16dp"
+                                    android:textColor="@color/colorTextColor"
+                                    android:spinnerMode = "dropdown"
+                                    android:popupBackground="@drawable/spinner_popup_item"
+                                    android:background="@drawable/spinner_rounded_corner_manual" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                style="@style/listViewItem"
+                                android:background="@android:drawable/list_selector_background">
+                                <TextView
+                                    android:textIsSelectable="false"
+                                    android:id="@+id/desc_item_header"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    style="@style/listViewPrimaryDetail"
+                                    android:ellipsize="marquee"
+                                    android:text="@string/description_hint" />
+                                <EditText
+                                    android:id="@+id/description"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/desc_item_header"
+                                    android:lines="3"
+                                    android:minLines="3"
+                                    android:maxLines="3"
+                                    android:gravity="top"
+                                    android:maxLength="100"
+                                    android:inputType="textMultiLine"
+                                    android:scrollbars="vertical"
+                                    android:textColor="@color/colorTextColor"
+                                    android:background="@drawable/textview_rounded_corner_stable_out" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="@dimen/fab_margin_0"
+                            android:layout_marginRight="@dimen/fab_margin_0"
+                            android:layout_marginTop="@dimen/fab_margin_2"
+                            android:layout_marginBottom="@dimen/fab_margin_2"
+                            android:layout_gravity="center">
+
+                            <Button
+                                android:id="@+id/btnOK"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/btn_get_cer"
+                                android:background="@drawable/button_selector_pressable"
+                                android:textColor="@color/colorTextColor"
+                                android:paddingLeft="@dimen/btn_padding"
+                                android:paddingRight="@dimen/btn_padding"
+                                android:layout_marginRight="@dimen/fab_margin_0"
+                                android:textAllCaps="false"
+                                android:textStyle="bold"
+                                android:layout_gravity="center" />
+                            <Button
+                                android:id="@+id/btnNewTest"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/btn_new_tests"
+                                android:background="@drawable/button_selector_disable"
+                                android:textColor="@color/colorTextColor"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textStyle="bold"
+                                android:layout_gravity="center" />
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/share_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <com.smartpro.smartcer.Control.ResizableImageView
+                            android:id="@+id/certification_image"
+                            android:src="@drawable/diamond_certification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fab_margin_0"
+                            android:layout_marginBottom="@dimen/fab_margin_0"
+                            android:layout_marginLeft="@dimen/fab_margin_2"
+                            android:layout_marginRight="@dimen/fab_margin_2" />
+
+                        <Button
+                            android:id="@+id/share_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/btn_share"
+                            android:background="@drawable/button_selector_pressable"
+                            android:textColor="@color/colorTextColor"
+                            android:paddingLeft="@dimen/btn_padding"
+                            android:paddingRight="@dimen/btn_padding"
+                            android:layout_marginTop="@dimen/fab_margin_2"
+                            android:layout_marginBottom="@dimen/fab_margin_0"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:layout_gravity="center" />
+                        <Button
+                            android:id="@+id/restart_property_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/btn_restart_property"
+                            android:background="@drawable/button_selector_pressable"
+                            android:textColor="@color/colorTextColor"
+                            android:paddingLeft="@dimen/btn_padding"
+                            android:paddingRight="@dimen/btn_padding"
+                            android:layout_marginBottom="@dimen/fab_margin_0"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:layout_gravity="center" />
+                        <Button
+                            android:id="@+id/restart_tests_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/btn_restart_tests"
+                            android:background="@drawable/button_selector_pressable"
+                            android:textColor="@color/colorTextColor"
+                            android:paddingLeft="@dimen/btn_padding"
+                            android:paddingRight="@dimen/btn_padding"
+                            android:layout_marginBottom="@dimen/fab_margin_2"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

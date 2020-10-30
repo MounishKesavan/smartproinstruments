@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gauge_test_array">
+        <item>กว้าง</item>
+        <item>ยาว</item>
+        <item>สูง</item>
+    </string-array>
+</resources>

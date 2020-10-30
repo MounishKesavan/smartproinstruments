@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="diamond_testedby_array">
+        <item>@string/choose</item>
+        <item>ไปเทสโดย Reader II</item>
+        <item>ไปเทสโดย HMSoft</item>
+        <item>ฉันยืนยันว่าเป็นเพชร</item>
+    </string-array>
+</resources>

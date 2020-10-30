@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="diamond_measurement_array">
+        <item>@string/choose</item>
+        <item>ไปเทสโดย HMSoft</item>
+        <item>ฉันจะกำหนดเอง</item>
+        <item>เคลียร์</item>
+    </string-array>
+</resources>

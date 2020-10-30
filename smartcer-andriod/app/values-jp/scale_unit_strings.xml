@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scale_unit_array">
+        <item>CT.</item>
+        <item>BAT.</item>
+        <item>DWT.</item>
+        <item>G.</item>
+        <item>OZ.</item>
+        <item>TL.</item>
+    </string-array>
+</resources>

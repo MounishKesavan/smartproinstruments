@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image">
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_screen_tests"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_screen"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_reader_tests"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_reader"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_gemstone_tests"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_gemeye"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_gague_tests"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_active_gauge"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_scale_tests"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_scale"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_certification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_cer"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_above="@id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/smartpro"
+                android:src="@drawable/smartpro"
+                android:layout_width="@dimen/smartpro_header_width"
+                android:layout_height="@dimen/smartpro_header_height"
+                android:layout_marginTop="@dimen/fab_margin_0"
+                android:layout_marginBottom="@dimen/fab_margin_0"
+                android:layout_marginLeft="@dimen/fab_margin_2"
+                android:layout_marginRight="@dimen/fab_margin_2"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/linear_section_height"
+                android:orientation="horizontal"
+                android:background="@drawable/linearlayout_gradient_background_section">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/fab_margin_0"
+                android:paddingLeft="@dimen/fab_margin_0"
+                android:paddingRight="@dimen/fab_margin_0">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.smartpro.smartcer.Control.ResizableImageView
+                        android:id="@+id/gauge_icon"
+                        android:layout_width="@dimen/test_icon_width"
+                        android:layout_height="@dimen/test_icon_width"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tab_icon_gauge"
+                        android:padding="0dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fab_margin_0">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gauge_tests"
+                            android:textColor="@color/colorTextColor"
+                            android:gravity="center|left" />
+                        <TextView
+                            android:id="@+id/gauge_connected_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_connected_status"
+                            android:textColor="@color/colorTextColor"
+                            android:gravity="center|left" />
+                        <LinearLayout
+                            android:id="@+id/gauge_bluetooth_panel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:clickable="true"
+                            android:background="@drawable/linearlayout_pressable">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <com.smartpro.smartcer.Control.ResizableImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/bluetooth_icon"
+                                    android:paddingTop="4dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/fab_margin_0">
+                                <TextView
+                                    android:id="@+id/gauge_press_to_connect"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/gauge_bt_press_to_connect"
+                                    android:textColor="@color/colorTextColor"
+                                    android:gravity="center|left" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gauge_bluetooth_message_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+                <TextView
+                    android:id="@+id/gauge_bluetooth_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BT Msg: -"
+                    android:gravity="center|left" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/linear_section_height"
+                android:orientation="horizontal"
+                android:background="@drawable/linearlayout_gradient_background_section">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp">
+
+                    <com.smartpro.smartcer.Control.ResizableImageView
+                        android:id="@+id/gauge_battery_icon"
+                        android:src="@drawable/battery_status_5"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="@dimen/fab_margin_0" />
+
+                    <TextView
+                        android:id="@+id/gauge_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/fab_margin_0"
+                        android:paddingRight="@dimen/fab_margin_0"
+                        android:text="@string/gauge_weight_mode"
+                        android:background="@drawable/textview_rounded_corner_result"
+                        android:textColor="@color/colorTextColor"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="@dimen/fab_margin_0" />
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingTop="2dp"
+                        android:paddingRight="@dimen/fab_margin_0">
+                        <TextView
+                            android:id="@+id/gauge_hold"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hold"
+                            android:background="@drawable/textview_rounded_corner_stable_out"
+                            android:textColor="@color/colorTextColor"
+                            android:textAlignment="center"
+                            android:layout_marginLeft="@dimen/fab_margin_0" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin">
+                    <com.smartpro.smartcer.Control.RiseNumberTextView
+                        android:id="@+id/gauge_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".65"
+                        android:textColor="@color/colorGrayColor"
+                        android:textSize="@dimen/gauge_result_value_size"
+                        android:gravity="center_vertical|right"
+                        android:text="0.00" />
+                    <TextView
+                        android:id="@+id/gauge_unit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".15"
+                        android:textColor="@color/colorGrayColor"
+                        android:textSize="@dimen/gauge_result_unit_size"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="@dimen/fab_margin_0"
+                        android:text="mm" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fab_margin">
+                    <com.smartpro.smartcer.Control.RiseNumberTextView
+                        android:id="@+id/gauge_weight_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".65"
+                        android:textColor="@color/colorGrayColor"
+                        android:textSize="@dimen/gauge_result_value_size"
+                        android:gravity="center_vertical|right"
+                        android:text="0.000" />
+                    <TextView
+                        android:id="@+id/gauge_weight_unit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".15"
+                        android:textColor="@color/colorGrayColor"
+                        android:textSize="@dimen/gauge_result_unit_size"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="@dimen/fab_margin_0"
+                        android:text="ct" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gauge_result_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fab_margin_0"
+                    android:layout_marginRight="@dimen/fab_margin_0"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/gauge_material"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fab_margin_0"
+                        android:text="@string/material_result_blank"
+                        android:textColor="@color/colorTextColor"
+                        android:background="@drawable/textview_rounded_corner_result"
+                        android:gravity="center|left" />
+                    <TextView
+                        android:id="@+id/gauge_result_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fab_margin_0"
+                        android:text="@string/shape_result_blank"
+                        android:textColor="@color/colorTextColor"
+                        android:background="@drawable/textview_rounded_corner_result"
+                        android:gravity="center|left" />
+                    <TextView
+                        android:id="@+id/gauge_result_gravity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fab_margin_0"
+                        android:text="@string/gravity_result_blank"
+                        android:textColor="@color/colorTextColor"
+                        android:background="@drawable/textview_rounded_corner_result"
+                        android:gravity="center|left" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin_0">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginLeft="@dimen/fab_margin_0"
+                        android:layout_marginRight="@dimen/fab_margin_0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/gauge_result_width"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/width_result_blank"
+                            android:textColor="@color/colorTextColor"
+                            android:background="@drawable/textview_rounded_corner_result"
+                            android:gravity="center|left" />
+                        <TextView
+                            android:id="@+id/gauge_result_depth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fab_margin_0"
+                            android:text="@string/depth_result_blank"
+                            android:textColor="@color/colorTextColor"
+                            android:background="@drawable/textview_rounded_corner_result"
+                            android:gravity="center|left" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginLeft="@dimen/fab_margin_0"
+                        android:layout_marginRight="@dimen/fab_margin_0"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/gauge_result_length"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/length_result_blank"
+                            android:textColor="@color/colorTextColor"
+                            android:background="@drawable/textview_rounded_corner_result"
+                            android:gravity="center|left" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/fab_margin_0"
+                android:layout_marginRight="@dimen/fab_margin_0"
+                android:layout_marginTop="@dimen/fab_margin_2"
+                android:layout_marginBottom="@dimen/fab_margin_0"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btn_gauge_connect"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_connect"
+                    android:background="@drawable/button_selector_pressable"
+                    android:textColor="@color/colorTextColor"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/fab_margin_0"/>
+                <Button
+                    android:id="@+id/btn_gauge_ok"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_add_to_cer"
+                    android:background="@drawable/button_selector_disable"
+                    android:textColor="@color/colorTextColor"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/fab_margin_0"/>
+                <Button
+                    android:id="@+id/btn_gauge_new_tests"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_new_tests"
+                    android:background="@drawable/button_selector_disable"
+                    android:textColor="@color/colorTextColor"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

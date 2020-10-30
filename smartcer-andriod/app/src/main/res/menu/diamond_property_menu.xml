@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/tested_by_go_diamond_tests"
+        android:alphabeticShortcut="a"
+        android:title="@string/tested_by_go_diamond_tests" />
+    <item android:id="@+id/tested_by_go_gemstone_tests"
+        android:alphabeticShortcut="b"
+        android:title="@string/tested_by_go_gemstone_tests" />
+    <item android:id="@+id/tested_by_myself"
+        android:alphabeticShortcut="c"
+        android:title="@string/tested_by_myself" />
+
+    <item android:id="@+id/measurements_go_gauge_tests"
+        android:alphabeticShortcut="d"
+        android:title="@string/measurements_go_gauge_tests" />
+    <item android:id="@+id/measurements_input_myself"
+        android:alphabeticShortcut="e"
+        android:title="@string/measurements_input_myself" />
+    <item android:id="@+id/measurements_clear"
+        android:alphabeticShortcut="f"
+        android:title="@string/measurements_clear" />
+
+    <item android:id="@+id/weight_go_scale_tests"
+        android:alphabeticShortcut="g"
+        android:title="@string/weight_go_scale_tests" />
+    <item android:id="@+id/weight_input_myself"
+        android:alphabeticShortcut="h"
+        android:title="@string/weight_input_myself" />
+    <item android:id="@+id/weight_clear"
+        android:alphabeticShortcut="i"
+        android:title="@string/weight_clear" />
+</menu>

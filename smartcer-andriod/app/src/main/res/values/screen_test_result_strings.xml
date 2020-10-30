@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="screen_test_result_array">
+        <item>Diamond</item>
+        <item>CVD/HPHT</item>
+        <item>Too Transparent</item>
+        <item>Ready</item>
+    </string-array>
+</resources>

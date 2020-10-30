@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="diamond_weight_array">
+        <item>@string/choose</item>
+        <item>Go test by HMSoft</item>
+        <item>I\'ll input by myself</item>
+        <item>Clear weight</item>
+    </string-array>
+</resources>

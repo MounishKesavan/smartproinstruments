@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="smartpro_device_name_array">
+        <item>SmartPro Reader II</item>
+        <item>SmartPro Scale I</item>
+        <item>SmartPro Gauge I</item>
+    </string-array>
+</resources>

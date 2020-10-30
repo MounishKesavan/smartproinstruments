@@ -1,0 +1,56 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="action_icon_margin">2dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin_0">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="content_padding_top_bottom">20dp</dimen>
+    <dimen name="fab_margin_2">32dp</dimen>
+    <dimen name="fab_margin_3">48dp</dimen>
+    <dimen name="fab_margin_4">64dp</dimen>
+    <dimen name="btn_padding">32dp</dimen>
+
+    <dimen name="splash_title_size">30dp</dimen>
+    <dimen name="linear_section_height">4dp</dimen>
+
+    <!-- Smart Pro -->
+    <dimen name="smartpro_header_width">263dp</dimen>
+    <dimen name="smartpro_header_height">40dp</dimen>
+
+    <!-- Home -->
+    <dimen name="home_icon_width">120dp</dimen>
+    <dimen name="test_icon_width">80dp</dimen>
+    <dimen name="enable_bluetooth_size">16dp</dimen>
+    <dimen name="label_size">20sp</dimen>
+    <dimen name="digital_value_size">40sp</dimen>
+    <dimen name="digital_unit_size">30sp</dimen>
+    <dimen name="gauge_result_value_size">90sp</dimen>
+    <dimen name="gauge_result_unit_size">30sp</dimen>
+
+    <!--Stable Ball -->
+    <dimen name="stable_ball_size">30dp</dimen>
+
+    <dimen name="lvPrimaryTextSize">18sp</dimen>
+    <dimen name="lvSecondaryTextSize">14sp</dimen>
+    <dimen name="lvHdrItemHeight">4dp</dimen>
+    <dimen name="lvItemHeight">65dp</dimen>
+
+    <dimen name="lvHeadingPaddingLeft">8dp</dimen>
+    <dimen name="lvHeadingTextSize">14sp</dimen>
+
+    <dimen name="lvPrimaryPaddingTop">6dp</dimen>
+    <dimen name="lvPrimaryPaddingBottom">1dp</dimen>
+    <dimen name="lvPrimaryPaddingLeft">8dp</dimen>
+
+    <dimen name="lvSecondaryPaddingTop">2dp</dimen>
+    <dimen name="lvSecondaryPaddingBottom">6dp</dimen>
+    <dimen name="lvSecondaryPaddingLeft">8dp</dimen>
+
+    <dimen name="lvDividerHeight">1dp</dimen>
+    <dimen name="lvDividerMargin">15dp</dimen>
+    <dimen name="lvSectionDividerMargin">5dp</dimen>
+    <dimen name="lvDividerWidth">1dp</dimen>
+
+    <dimen name="lvSectionDividerMarginTop">5dp</dimen>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image">
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_screen_tests"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_screen"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_reader_tests"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_reader"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_gemstone_tests"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_gemeye"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_gague_tests"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_gauge"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_scale_tests"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_inactive_scale"/>
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/action_certification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/action_icon_margin"
+                android:src="@drawable/action_active_cer"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_above="@id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.smartpro.smartcer.Control.ResizableImageView
+                android:id="@+id/smartpro"
+                android:src="@drawable/smartpro"
+                android:layout_width="@dimen/smartpro_header_width"
+                android:layout_height="@dimen/smartpro_header_height"
+                android:layout_marginTop="@dimen/fab_margin_0"
+                android:layout_marginBottom="@dimen/fab_margin_0"
+                android:layout_marginLeft="@dimen/fab_margin_2"
+                android:layout_marginRight="@dimen/fab_margin_2"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/linear_section_height"
+                android:orientation="horizontal"
+                android:background="@drawable/linearlayout_gradient_background_section">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:gravity="center">
+                <com.smartpro.smartcer.Control.ResizableImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingRight="@dimen/fab_margin_4"
+                    android:paddingLeft="@dimen/fab_margin_4"
+                    android:src="@drawable/tab_icon_cer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_cert_diamond_cert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin"
+                    android:text="@string/diamond_certification"
+                    android:background="@drawable/button_selector_pressable"
+                    android:textColor="@color/colorTextColor"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/fab_margin_0"/>
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

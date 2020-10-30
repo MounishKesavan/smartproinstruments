@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="diamond_test_result_array">
+        <item>Diamond</item>
+        <item>Moissanite</item>
+        <item>Simulant</item>
+        <item>Metal</item>
+    </string-array>
+</resources>

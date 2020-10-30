@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F0622F</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#3A3D41</color>
+
+    <color name="colorLabel">#a5d4e2</color>
+    <color name="colorBackground">#f28560</color>
+    <color name="colorBorder">#3A3D41</color>
+    <color name="colorPressed">#99F0622F</color>
+    <color name="colorFocused">#99f28560</color>
+
+    <color name="colorDidital">#07FD1D</color>
+    <color name="colorTextColor">#ffffff</color>
+    <color name="colorYellowColor">#F3E533</color>
+    <color name="colorConnectedColor">#07FD1D</color>
+    <color name="colorDigitalTextColor">#82BB23</color>
+    <color name="colorGrayColor">#97999c</color>
+    <color name="colorDarkerGray">#A7A7A7</color>
+
+
+    <color name="colorCertResult">#2B91AF</color>
+
+
+    <color name="lvHeaderTextColor">#168686</color>
+    <color name="primaryTextColor">#333333</color>
+    <color name="secondaryTextColor">#777777</color>
+    <color name="goblinGreen">#168686</color>
+    <color name="lvHeaderDividerColor">#168686</color>
+    <color name="lvDividerColor">#E0E0E0</color>
+</resources>

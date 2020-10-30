@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">SmartPro</string>
+    <string name="splash_title">SmartPro</string>
+
+    <!-- Enable Bluetooth -->
+    <string name="enable_bluetooth">โปรแกรมนี้ออกแบบเพื่อทดสอบเพชร ทำงานร่วมกับอุปกรณ์บลูทูธสมาร์ทโปร กดเมนูเพื่อเริ่มการทดสอบ และออกใบเซอร์</string>
+    <string name="btn_pair_bluetooth">เริ่มต้น</string>
+    <string name="bt_not_ble">อุปกรณ์นี้ไม่ใช่ BLE</string>
+    <string name="bt_not_work">ไม่พบบลูทูธบนอุปกรณ์นี้</string>
+    <string name="bt_is_not_paired">%1$s ยังไม่ถูกแพร์</string>
+    <string name="bt_press_to_connect">กดตรงนี้เพื่อเชื่อมต่อ %1$s</string>
+    <string name="bt_might_be_closed">%1$s might be closed or not in range.</string>
+    <string name="please_wait">กรุณารอ ...</string>
+    <string name="taskInProgress">กำลังทำงาน ...</string>
+    <string name="tost_connected">เริ่มต้นทดสอบ</string>
+    <string name="disconnected_device_successfully">Disconnected device successfully</string>
+
+    <!-- General -->
+    <string name="not_connected_status">สถานะ : ไม่เชื่อมต่อ</string>
+    <string name="connecting_status">สถานะ : กำลังเชื่อมต่อ</string>
+    <string name="connected_status">สถานะ : เชื่อมต่อ</string>
+    <string name="not_connected_device">อุปกรณ์ : -</string>
+    <string name="connected_device">อุปกรณ์ : %1$s</string>
+    <string name="unit">หน่วย :</string>
+    <string name="btn_connect">เชื่อมต่อ</string>
+    <string name="btn_disconnect">ยกเลิกเชื่อมต่อ</string>
+    <string name="btn_add_to_cer">ส่งผลใบเซอร์</string>
+    <string name="btn_get_cer">Get Certificate</string>
+    <string name="btn_hold">Hold</string>
+    <string name="btn_new_tests">เคลียร์</string>
+    <string name="choose"></string>
+    <string name="btn_share">แชร์</string>
+    <string name="btn_restart_property">กำหนดคุณสมบัติใหม่</string>
+    <string name="btn_restart_tests">เริ่มต้นใหม่</string>
+
+
+
+    <!-- Gauge Tests -->
+    <string name="gauge_mode_blank">Mode: -</string>
+    <string name="gauge_mode">%1$s</string>
+    <string name="gauge_weight_mode">Weight Estimation</string>
+    <string name="gauge_weight_mode_for">Estimation weight of %1$s</string>
+    <string name="gauge_inner_mode">Inner Measurement</string>
+    <string name="gauge_outer_mode">Outer Measurement</string>
+    <string name="width">Width</string>
+    <string name="length">Length</string>
+    <string name="height">Height</string>
+
+    <string name="gauge_tests">Primo-I Tester</string>
+    <string name="gauge_bt_press_to_connect">Test Diamond’s dimensions to add in certificate</string>
+    <string name="gauge_value_hint">Gauge</string>
+    <string name="hold">โฮล</string>
+
+    <string name="cutting_result_text">Shape : %1$s</string>
+    <string name="width_result_text">Width : %1$s %2$s</string>
+    <string name="length_result_text">Length : %1$s %2$s</string>
+    <string name="depth_result_text">Depth : %1$s %2$s</string>
+    <string name="gravity_result_text">Specific gravity : %1$s</string>
+    <string name="material_result_text">Gemstone : %1$s</string>
+    <string name="shape_result_blank">Shape : -</string>
+    <string name="width_result_blank">Width : -</string>
+    <string name="length_result_blank">Length : -</string>
+    <string name="depth_result_blank">Depth : -</string>
+    <string name="gravity_result_blank">Specific gravity : -</string>
+    <string name="material_result_blank">Material : -</string>
+
+    <!-- Scale Tests -->
+    <string name="scale_tests">Scale Tester</string>
+    <string name="scale_bt_press_to_connect">Test Diamond’s weight to add in certificate</string>
+    <string name="scale_value_hint">Scale</string>
+    <string name="scale_stable_result">Stable Result</string>
+
+    <!-- Diamond Tests -->
+    <string name="diamond_tests">Reader-I Tester</string>
+    <string name="diamond_bt_press_to_connect">Test diamond by its thermal, electrical conductivity 5 times to get certificate</string>
+    <string name="stable_result">ผลลัพธ์</string>
+    <string name="diamond_test_result_text">#%1$s : %2$s</string>
+    <string name="diamond_test_result1_blank">#1 : -</string>
+    <string name="diamond_test_result2_blank">#2 : -</string>
+    <string name="diamond_test_result3_blank">#3 : -</string>
+    <string name="diamond_test_result4_blank">#4 : -</string>
+    <string name="diamond_test_result5_blank">#5 : -</string>
+
+    <!-- Screen Tests -->
+    <string name="screen_tests">Screen-I Tester</string>
+    <string name="screen_bt_press_to_connect">Test Diamond by its UV trasparency 5 times to get certificate</string>
+
+    <!-- Gem Stone Tests -->
+    <string name="gemstone_tests">Gem-eye-I Tester</string>
+    <string name="gemstone_bt_press_to_connect">Test Gem Stones by its thermal conductivity</string>
+    <string name="gemstone_tests_simulant">Simulant</string>
+    <string name="gemstone_tests_diamond">Diamond</string>
+    <string name="gemstone_tests_metal">Metal</string>
+
+    <!-- Certification -->
+    <string name="diamond_certification">Diamond / CVD / HPHT / Moissanite Dossier</string>
+    <string name="sapphire_certification">Sapphire Dossier</string>
+
+
+
+    <!-- Diamond Properties -->
+    <string name="properties">คุณสมบัติ</string>
+    <string name="properties_desc">....</string>
+    <string name="sellername">Seller Name</string>
+    <string name="tested_by_hint">Grading Report</string>
+    <string name="measurements_hint">Measurements</string>
+    <string name="weight_hint">กว้าง</string>
+    <string name="shape_hint">รูปแบบ</string>
+    <string name="cut_hint">Cut Type</string>
+    <string name="color_hint">สี</string>
+    <string name="clarity_hint">Clarity</string>
+    <string name="mounted_hint">Mounted</string>
+    <string name="description_hint">Description</string>
+
+    <string name="tested_by_go_diamond_tests">Go tests by Reader II</string>
+    <string name="tested_by_go_gemstone_tests">Go tests by GemEye I</string>
+    <string name="tested_by_myself">I guarantee diamond</string>
+    <string name="measurements_go_gauge_tests">Go tests by Gauge I</string>
+    <string name="measurements_input_myself">I\'ll input by myself</string>
+    <string name="measurements_clear">Clear</string>
+    <string name="weight_go_scale_tests">Go tests by Scale I</string>
+    <string name="weight_input_myself">I\'ll input by myself</string>
+    <string name="weight_clear">Clear</string>
+
+    <string name="action_about">About</string>
+    <string name="action_rating">Rating</string>
+    <string name="action_diamond_tests">Diamond</string>
+    <string name="action_gemstone_tests">Gemstone</string>
+    <string name="action_scale_tests">Scale</string>
+    <string name="action_gauge_tests">Gauge</string>
+    <string name="action_properties">Properties</string>
+    <string name="action_certification">Certification</string>
+
+
+    <!-- Diamond Certification -->
+    <string name="cer_customer_id">SPI</string>
+    <string name="cer_report_type">Report Type</string>
+    <string name="cer_shape_and_style">Shape</string>
+    <string name="cer_measurements">Measurements</string>
+    <string name="cer_grading_results">Grading Results</string>
+    <string name="cer_carat_weight">Carat Weight</string>
+    <string name="cer_color_grade">Color Grade</string>
+    <string name="cer_clarity_grade">Clarity Grade</string>
+    <string name="cer_comments">Comments</string>
+
+    <string name="cer_smartpro_reader_2">SmartPro Reader II</string>
+    <string name="cer_smartpro_scale_1">SmartPro Scale I</string>
+    <string name="cer_smartpro_gauge_1">SmartPro Gauge I</string>
+    <string name="cer_test_by_smartpro_singular">is tested by SmartPro Bluetooth device</string>
+    <string name="cer_test_by_smartpro_prural">are tested by SmartPro Bluetooth devices</string>
+    <string name="cd">Content Description</string>
+
+</resources>

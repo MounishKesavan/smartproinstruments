@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="diamond_shape_array">
+        <item>@string/choose</item>
+        <item>Asscher</item>
+        <item>Bagutte</item>
+        <item>Cushion</item>
+        <item>Emerald</item>
+        <item>Heart</item>
+        <item>Marquise</item>
+        <item>Oval</item>
+        <item>Pear</item>
+        <item>Princess</item>
+        <item>Radiant</item>
+        <item>Round</item>
+        <item>Tapered Bagutte</item>
+        <item>Trillion</item>
+    </string-array>
+</resources>
